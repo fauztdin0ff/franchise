@@ -1487,6 +1487,11 @@ Calculator
 /*---------------------------------------------------------------------------
 Compare
 ---------------------------------------------------------------------------*/
+@media (width < 768px) {
+  .compare {
+    padding: 40px 0 80px;
+  }
+}
 .compare__subtitle {
   margin-bottom: 60px;
 }
@@ -1499,9 +1504,40 @@ Compare
   grid-template-columns: 1fr 60px 1fr;
   gap: 20px;
   border-radius: 30px;
+  margin-bottom: 60px;
+}
+@media (width < 1024px) {
+  .compare__content {
+    margin-bottom: 40px;
+  }
+}
+@media (width < 768px) {
+  .compare__content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    background: none;
+    border-radius: 0;
+    padding: 0;
+    margin-bottom: 30px;
+  }
 }
 .compare__col:first-child {
   text-align: right;
+}
+@media (width < 768px) {
+  .compare__col {
+    position: sticky;
+    top: 60px;
+    z-index: 2;
+    border-radius: 30px;
+    background: #fff;
+    padding: 70px 16px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.06);
+  }
+  .compare__col:first-child {
+    z-index: 1;
+    text-align: left;
+  }
 }
 .compare__col-title {
   color: #acacac;
@@ -1510,6 +1546,22 @@ Compare
   line-height: 111.111111%;
   text-transform: uppercase;
   margin-bottom: 40px;
+}
+@media (width < 1200px) {
+  .compare__col-title {
+    font-size: 32px;
+  }
+}
+@media (width < 1024px) {
+  .compare__col-title {
+    font-size: 24px;
+    line-height: 116.666667%;
+  }
+}
+@media (width < 768px) {
+  .compare__col-title {
+    text-align: center;
+  }
 }
 .compare__col-list {
   text-transform: uppercase;
@@ -1553,6 +1605,33 @@ Compare
   line-height: 133.333333%;
   text-align: center;
 }
+@media (width < 1024px) {
+  .compare__col-list li {
+    font-size: 14px;
+  }
+}
+@media (width < 768px) {
+  .compare__col-list li {
+    text-align: left;
+    justify-content: flex-start;
+    padding-left: 70px;
+    font-size: 16px;
+    line-height: 125%;
+    text-wrap: balance;
+  }
+  .compare__col-list li::before {
+    display: flex;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+  }
+}
+@media (width < 359px) {
+  .compare__col-list li {
+    font-size: 14px;
+  }
+}
 .compare__col-active .compare__col-title {
   color: #038e43;
 }
@@ -1568,10 +1647,75 @@ Compare
 .compare__col-active .compare__col-list li::before {
   display: flex;
 }
+@media (width < 768px) {
+  .compare__col-active .compare__col-list li::before {
+    display: flex;
+    color: #038e43;
+    border-color: #038e43;
+  }
+}
 .compare__separator-line {
   display: block;
   margin-inline: auto;
   width: 1px;
   height: 100%;
   background: #636363;
+}
+.compare__difference {
+  position: relative;
+  padding: 110px 0 120px;
+  max-width: 1132px;
+  margin-inline: auto;
+}
+.compare__difference-title {
+  max-width: 768px;
+  margin-inline: auto;
+  text-align: center;
+}
+@media (width < 1200px) {
+  .compare__difference-title {
+    max-width: 70%;
+    font-size: 26px;
+  }
+}
+@media (width < 1024px) {
+  .compare__difference-title {
+    font-size: 22px;
+  }
+}
+@media (width < 768px) {
+  .compare__difference-title {
+    font-size: 16px;
+  }
+}
+.compare__difference-lines {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+.compare__difference-lines svg {
+  width: 100%;
+  height: auto;
+}
+.compare__difference-lines-desktop {
+  display: block;
+}
+@media (width < 768px) {
+  .compare__difference-lines-desktop {
+    display: none;
+  }
+}
+.compare__difference-lines-mob {
+  display: none;
+  max-width: 500px;
+  margin-inline: auto;
+}
+@media (width < 768px) {
+  .compare__difference-lines-mob {
+    display: block;
+  }
 }
