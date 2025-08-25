@@ -732,6 +732,11 @@ main {
   display: flex;
   flex-direction: column;
 }
+@media (width < 1024px) {
+  .fv-franchise__info {
+    flex: 1 1 auto;
+  }
+}
 .fv-franchise__title {
   margin-bottom: 20px;
 }
@@ -806,7 +811,13 @@ main {
   }
 }
 @media (width < 1024px) {
+  .fv-franchise__image {
+    width: 100%;
+    height: auto;
+  }
   .fv-franchise__image img {
+    width: 100%;
+    height: auto;
     transform: none;
   }
 }
@@ -2040,4 +2051,305 @@ Coverage
     width: 100%;
     height: 100%;
   }
+}
+
+/*---------------------------------------------------------------------------
+Faq
+---------------------------------------------------------------------------*/
+@media (width < 768px) {
+  .faq {
+    padding: 40px 0 80px;
+  }
+}
+.faq__title {
+  margin-bottom: 60px;
+}
+.faq__items {
+  max-width: 1112px;
+  margin-inline: auto;
+}
+.faq__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 70px;
+  border-top: 1px solid #c6c6c6;
+  padding: 39px 0;
+}
+.faq__item.active .faq__answer {
+  padding-top: 20px;
+}
+.faq__item.active .faq__icon-plus {
+  transform: rotate(90deg);
+  opacity: 0;
+}
+.faq__item.active .faq__icon-minus {
+  transform: rotate(0deg);
+  opacity: 1;
+}
+@media (width < 768px) {
+  .faq__item {
+    padding: 20px 0;
+    gap: 14px;
+  }
+}
+.faq__question {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  font-size: 24px;
+  line-height: 133.333333%;
+  font-weight: 600;
+  cursor: pointer;
+}
+@media (width < 768px) {
+  .faq__question {
+    gap: 0;
+    font-size: 18px;
+    line-height: 122.222222%;
+  }
+}
+.faq__question-num {
+  width: 40px;
+  flex: 0 0 40px;
+}
+.faq__question-text {
+  flex: 1;
+}
+.faq__answer {
+  max-height: 0;
+  overflow: hidden;
+  margin-left: 60px;
+  transition: all 0.3s linear 0s;
+  font-size: 20px;
+  line-height: 140%;
+}
+@media (width < 768px) {
+  .faq__answer {
+    margin-left: 40px;
+    font-size: 14px;
+    line-height: 120%;
+  }
+}
+.faq__icon {
+  flex: 0 0 50px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 0.78px solid #c6c6c6;
+  position: relative;
+  cursor: pointer;
+}
+@media (width < 768px) {
+  .faq__icon {
+    flex: 0 0 30px;
+    width: 30px;
+    height: 30px;
+  }
+}
+.faq__icon-plus, .faq__icon-minus {
+  position: absolute;
+  top: calc(50% - 11px);
+  left: calc(50% - 11px);
+  width: 22px;
+  height: 22px;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+@media (width < 768px) {
+  .faq__icon-plus, .faq__icon-minus {
+    top: calc(50% - 7px);
+    left: calc(50% - 7px);
+    width: 14px;
+    height: 14px;
+  }
+}
+.faq__icon-minus {
+  opacity: 0;
+  transition: transform 0.3s ease 0s;
+  transform: rotate(-90deg);
+}
+
+/*---------------------------------------------------------------------------
+About
+---------------------------------------------------------------------------*/
+@media (width < 768px) {
+  .fv-about {
+    padding: 40px 0 80px;
+  }
+}
+.fv-about__content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 50px;
+  max-width: 1114px;
+  margin-inline: auto;
+}
+@media (width < 768px) {
+  .fv-about__content {
+    flex-direction: column-reverse;
+  }
+}
+.fv-about__info {
+  max-width: 491px;
+}
+@media (width < 768px) {
+  .fv-about__info {
+    max-width: 100%;
+  }
+}
+.fv-about__title {
+  margin-bottom: 60px;
+}
+.fv-about__subtitle {
+  max-width: 461px;
+  margin-bottom: 20px;
+}
+@media (width < 768px) {
+  .fv-about__subtitle {
+    text-align: center;
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+}
+.fv-about__text p:not(:last-child) {
+  margin-bottom: 20px;
+}
+@media (width < 768px) {
+  .fv-about__text {
+    color: #636363;
+  }
+}
+.fv-about__image {
+  flex-shrink: 0;
+}
+@media (width < 768px) {
+  .fv-about__image img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/*---------------------------------------------------------------------------
+Заявка
+---------------------------------------------------------------------------*/
+.fv-request {
+  background: #eae9e9;
+}
+@media (width < 768px) {
+  .fv-request {
+    padding: 80px 0 64px;
+  }
+}
+.fv-request__body {
+  display: flex;
+  gap: 36px;
+}
+@media (width < 980px) {
+  .fv-request__body {
+    gap: 30px;
+  }
+}
+@media (width < 768px) {
+  .fv-request__body {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+.fv-request__card {
+  flex: 1;
+  padding: 50px 37px;
+  border-radius: 30px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.fv-request__card:first-child {
+  max-width: 517px;
+}
+@media (width < 980px) {
+  .fv-request__card {
+    flex: 1;
+  }
+  .fv-request__card:first-child {
+    max-width: unset;
+  }
+}
+@media (width < 768px) {
+  .fv-request__card {
+    padding: 40px 20px;
+  }
+}
+.fv-request__card-name {
+  margin-bottom: 47px;
+}
+@media (width < 768px) {
+  .fv-request__card-name {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
+}
+.fv-request__links {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+@media (width < 980px) {
+  .fv-request__links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+}
+.fv-request__contacts a {
+  color: #0b0b0b;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 133.333333%;
+  text-transform: uppercase;
+  display: block;
+  transition: all 0.3s ease 0s;
+}
+.fv-request__contacts a:not(:last-child) {
+  margin-bottom: 10px;
+}
+@media (hover: hover) {
+  .fv-request__contacts a:hover {
+    color: #038e43;
+  }
+}
+@media (width < 768px) {
+  .fv-request__contacts a {
+    font-size: 16px;
+  }
+}
+.fv-request__socials {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.fv-request__socials a {
+  width: 40px;
+  height: 40px;
+  background: #038e43;
+  color: #fff;
+}
+@media (hover: hover) {
+  .fv-request__socials a:hover {
+    background: transparent;
+    border-color: #038e43;
+    color: #038e43;
+  }
+}
+.fv-request__socials a svg {
+  width: 20px;
+  height: 20px;
+}
+.fv-request__card-button {
+  width: 100%;
+}
+.fv-request__card-button:not(:last-child) {
+  margin-bottom: 30px;
 }

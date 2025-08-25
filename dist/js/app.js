@@ -355,6 +355,47 @@ document.addEventListener("DOMContentLoaded", () => {
       }
    });
 });
+
+
+/*------------------------------
+FAQ
+---------------------------*/
+document.addEventListener("DOMContentLoaded", () => {
+   const faqItems = document.querySelectorAll(".faq__item");
+
+   if (!faqItems || faqItems.length === 0) return;
+
+   faqItems.forEach((item) => {
+      if (!item) return;
+
+      const question = item.querySelector(".faq__question");
+      const icon = item.querySelector(".faq__icon");
+      const answer = item.querySelector(".faq__answer");
+
+      if (!question || !icon || !answer) return;
+
+      const toggleFaqItem = () => {
+         const isActive = item.classList.contains("active");
+
+         faqItems.forEach((el) => {
+            const elAnswer = el.querySelector(".faq__answer");
+            if (elAnswer) {
+               el.classList.remove("active");
+               elAnswer.style.maxHeight = null;
+            }
+         });
+
+         if (!isActive) {
+            item.classList.add("active");
+            answer.style.maxHeight = answer.scrollHeight + 40 + "px";
+         }
+      };
+
+      question.addEventListener("click", toggleFaqItem);
+      icon.addEventListener("click", toggleFaqItem);
+   });
+});
+
 })();
 
 /******/ })()
