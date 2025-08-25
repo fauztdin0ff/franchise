@@ -313,6 +313,48 @@ if (slider) {
 }
 
 
+/*---------------------------------------------------------------------------
+Map card anim
+---------------------------------------------------------------------------*/
+const coverage = document.querySelector(".coverage");
+const card = document.querySelector(".coverage__card");
+
+if (coverage && card) {
+   coverage.addEventListener("mousemove", (e) => {
+      const rect = coverage.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const centerX = rect.width / 2;
+      const rotateY = ((x - centerX) / centerX) * 15;
+      const shadowX = -rotateY * 2;
+      const shadowY = 15;
+
+      card.style.transform = `rotateY(${rotateY}deg)`;
+      card.style.boxShadow = `${shadowX}px ${shadowY}px 30px rgba(0, 0, 0, 0.25)`;
+   });
+
+   coverage.addEventListener("mouseleave", () => {
+      card.style.transform = "rotateY(0deg)";
+      card.style.boxShadow = "0 10px 25px rgba(0, 0, 0, 0.2)";
+   });
+}
+
+/*---------------------------------------------------------------------------
+Steps anim
+---------------------------------------------------------------------------*/
+document.addEventListener("DOMContentLoaded", () => {
+   const isMobile = window.matchMedia("(max-width: 768px)").matches;
+   const animations = document.querySelectorAll("svg animate");
+
+   animations.forEach((anim, i) => {
+      if (isMobile) {
+         anim.setAttribute("dur", "5s");
+         anim.setAttribute("begin", `0`);
+      } else {
+         anim.setAttribute("dur", "8s");
+         anim.setAttribute("begin", `${i * 3}s`);
+      }
+   });
+});
 })();
 
 /******/ })()
