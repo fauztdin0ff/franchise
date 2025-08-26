@@ -345,16 +345,19 @@ document.addEventListener("DOMContentLoaded", () => {
    const isMobile = window.matchMedia("(max-width: 768px)").matches;
    const animations = document.querySelectorAll("svg animate");
 
+   if (!animations.length) return;
+
    animations.forEach((anim, i) => {
       if (isMobile) {
          anim.setAttribute("dur", "5s");
-         anim.setAttribute("begin", `0`);
+         anim.setAttribute("begin", "0");
       } else {
          anim.setAttribute("dur", "8s");
          anim.setAttribute("begin", `${i * 3}s`);
       }
    });
 });
+
 
 
 /*------------------------------
