@@ -39,8 +39,8 @@
                         Присоединяйся к сильному бренду и запусти бизнес, который уже за 6 месяцев приносит 300
                         000 ₽/мес.</div>
                      <div class="fv-franchise__buttons">
-                        <a href="" class="button-green">Узнать больше</a>
-                        <a href="" class="button">Бесплатная консультация</a>
+                        <a href="#" class="button-green open-popup" data-popup="requestPopup">Узнать больше</a>
+                        <a href="#" class="button  open-popup" data-popup="requestPopup">Бесплатная консультация</a>
                         <a href="" target="_blank" class="button-soc" aria-label="whatsapp">
                            <svg>
                               <use xlink:href="#icon-whatsapp"></use>
@@ -181,12 +181,12 @@
                      <div class="stories__slider-pagination slider-pagination"></div>
                   </div>
                   <div class="stories__slider-buttons">
-                     <button type="button" class="stories__slider-prev slider-prev">
+                     <button type="button" class="stories__slider-prev slider-prev" aria-label="предыдущий слайд">
                         <svg>
                            <use xlink:href="#icon-arrow-left"></use>
                         </svg>
                      </button>
-                     <button type="button" class="stories__slider-next slider-next">
+                     <button type="button" class="stories__slider-next slider-next" aria-label="следующий слайд">
                         <svg>
                            <use xlink:href="#icon-arrow-right"></use>
                         </svg>
@@ -195,7 +195,7 @@
                </div>
                <div class="stories__buttons">
                   <a href="" class="button-green">Посмотреть кейсы</a>
-                  <a href="" class="button">Бесплатная консультация</a>
+                  <a href="" class="button open-popup" data-popup="requestPopup">Бесплатная консультация</a>
                </div>
             </div>
          </section>
@@ -216,7 +216,7 @@
                               250 тыс. руб.
                            </div>
                            <div class="tariffs__item-button">
-                              <a href="" class="button">Хочу базовый</a>
+                              <a href="" class="button open-popup" data-popup="requestPopup">Хочу базовый</a>
                            </div>
                            <div class="tariffs__item-att">
                               Точка безубыточности: ~12 месяцев (в зависимости от региона)
@@ -245,7 +245,7 @@
                               400 тыс. руб.
                            </div>
                            <div class="tariffs__item-button">
-                              <a href="" class="button-white">Хочу стандартный</a>
+                              <a href="" class="button-white open-popup" data-popup="requestPopup">Хочу стандартный</a>
                            </div>
                            <div class="tariffs__item-att">
                               Точка безубыточности: ~12 месяцев (в зависимости от региона)
@@ -272,7 +272,7 @@
                               1 млн. руб.
                            </div>
                            <div class="tariffs__item-button">
-                              <a href="" class="button">Хочу премиум</a>
+                              <a href="" class="button open-popup" data-popup="requestPopup">Хочу премиум</a>
                            </div>
                            <div class="tariffs__item-att">
                               Точка безубыточности: ~12 месяцев (в зависимости от региона)
@@ -363,7 +363,7 @@
                         прикрас и
                         пафоса.</div>
                      <div class="calculator__request-button">
-                        <a href="" class="button-green">Связаться с нами</a>
+                        <a href="" class="button-green open-popup" data-popup="requestPopup">Связаться с нами</a>
                      </div>
                   </div>
                </div>
@@ -552,7 +552,8 @@
                      <div class="coverage__card-subtitle">Присоединяйтесь к сети, которая растёт и приносит стабильный
                         доход.</div>
                      <div class="coverage__button">
-                        <button type="button" class="button-green">Оставить заявку</button>
+                        <button type="button" class="button-green open-popup" data-popup="requestPopup">Оставить
+                           заявку</button>
                      </div>
                   </div>
                   <div class="coverage__map">
@@ -842,9 +843,12 @@
                <div class="fv-request__card">
                   <h4 class="fv-request__card-name">Оставить заявку на открытие предприятия icleaning</h4>
                   <div class="fv-request__card-buttons">
-                     <button type="button" class="fv-request__card-button button">Хочу открыть в России</button>
-                     <button type="button" class="fv-request__card-button button">Хочу открыть в другой стране</button>
-                     <button type="button" class="fv-request__card-button button">У меня уже есть спот, хочу
+                     <button type="button" class="fv-request__card-button button open-popup"
+                        data-popup="requestPopup">Хочу открыть в России</button>
+                     <button type="button" class="fv-request__card-button button open-popup"
+                        data-popup="requestPopup">Хочу открыть в другой стране</button>
+                     <button type="button" class="fv-request__card-button button open-popup" data-popup="requestPopup">У
+                        меня уже есть спот, хочу
                         ещё</button>
                   </div>
                </div>
@@ -852,6 +856,56 @@
          </section>
       </main>
       <footer></footer>
+
+      <div class="fv-popup" id="requestPopup">
+         <div class="fv-popup__body">
+            <h3 class="fv-popup__title">Ответим на все ваши вопросы</h3>
+            <form class="fv-popup__form">
+               <div class="fv-popup__form-area">
+                  <div class="fv-popup__form-label">Телефон</div>
+                  <input type="text" class="theme-input tel-mask" placeholder="+7 (999)  111-22-33" autocomplete="tel">
+                  <div class="fv-popup__form-error"></div>
+               </div>
+               <div class="fv-popup__form-area no-valid">
+                  <div class="fv-popup__form-label">Почта</div>
+                  <input type="email" class="theme-input" placeholder="info@icompany.ru" autocomplete="email">
+                  <div class="fv-popup__form-error">Некорректная почта</div>
+               </div>
+               <div class="fv-popup__form-area">
+                  <div class="fv-popup__form-label">Имя</div>
+                  <input type="text" class="theme-input" placeholder="Введите ваше имя" autocomplete="name">
+                  <div class="fv-popup__form-error"></div>
+               </div>
+               <div class="fv-popup__form-area">
+                  <div class="fv-popup__form-label">Город</div>
+                  <input type="text" class="theme-input" placeholder="Введите название вашего города"
+                     autocomplete="address-level2">
+                  <div class="fv-popup__form-error"></div>
+               </div>
+               <button type="submit" class="button-green">Отправить</button>
+               <div class="fv-popup__form-agree">
+                  <label class="theme-checkbox">
+                     <input type="checkbox">
+                     <span class="theme-checkbox__box"></span>
+                     <span>
+                        Нажимая на кнопку вы даёте согласие на обработку <a href="">персональных данных</a> и
+                        соглашаетесь
+                        с <a href="">политикой конфиденциальности</a>
+                     </span>
+                  </label>
+               </div>
+            </form>
+            <div class="fv-popup__close">
+               <svg>
+                  <use xlink:href="#icon-close"></use>
+               </svg>
+            </div>
+            <div class="fv-popup__bg">
+               <img src="img/theme-icons/circle-lines.svg" width="955" height="294" alt="lines">
+            </div>
+         </div>
+      </div>
+
    </div>
    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
    style="display: none;">
@@ -862,6 +916,13 @@
    </svg><svg fill="none" viewBox="0 0 17 16" id="icon-arrow-right" xmlns="http://www.w3.org/2000/svg">
       <path
          d="m9.625 15.29 6.6-6.6c.1-.1.17-.208.213-.325.042-.117.063-.242.062-.375 0-.133-.021-.258-.063-.375a.888.888 0 0 0-.212-.325l-6.6-6.6a.976.976 0 0 0-.688-.287.931.931 0 0 0-.712.287.937.937 0 0 0-.313.688.925.925 0 0 0 .288.712l4.9 4.9H1.925a.968.968 0 0 0-.713.288.964.964 0 0 0-.287.712.97.97 0 0 0 .287.713.963.963 0 0 0 .713.287H13.1l-4.9 4.9a.994.994 0 0 0-.288.7.868.868 0 0 0 .288.7c.183.2.417.3.7.3s.525-.1.725-.3Z"
+         fill="currentColor" />
+   </svg><svg fill="none" viewBox="0 0 33 33" id="icon-close" xmlns="http://www.w3.org/2000/svg">
+      <line x1="0.353553" y1="0.646447" x2="32.1734" y2="32.4663" stroke="currentColor" />
+      <line x1="32.1729" y1="1.36039" x2="0.353082" y2="33.1802" stroke="currentColor" />
+   </svg><svg fill="none" viewBox="0 0 41 16" id="icon-arrow-long" xmlns="http://www.w3.org/2000/svg">
+      <path
+         d="M0.792892 7.29289C0.40237 7.68342 0.40237 8.31658 0.792892 8.70711L7.15685 15.0711C7.54738 15.4616 8.18054 15.4616 8.57107 15.0711C8.96159 14.6805 8.96159 14.0474 8.57107 13.6569L2.91422 8L8.57107 2.34315C8.96159 1.95262 8.96159 1.31946 8.57107 0.928932C8.18054 0.538408 7.54738 0.538408 7.15685 0.928932L0.792892 7.29289ZM40.5 8V7L1.5 7V8V9L40.5 9V8Z"
          fill="currentColor" />
    </svg><svg fill="none" viewBox="0 0 85 85" id="icon-play-circle" xmlns="http://www.w3.org/2000/svg">
       <circle cx="42.5" cy="42.5" r="42" stroke="currentColor" />
