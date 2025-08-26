@@ -319,7 +319,7 @@ Map card anim
 const coverage = document.querySelector(".coverage");
 const card = document.querySelector(".coverage__card");
 
-if (coverage && card) {
+if (window.innerWidth >= 1024 && coverage && card) {
    coverage.addEventListener("mousemove", (e) => {
       const rect = coverage.getBoundingClientRect();
       const x = e.clientX - rect.left;
