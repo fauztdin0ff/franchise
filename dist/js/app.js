@@ -300,9 +300,9 @@ if (slider) {
             document.removeEventListener("touchmove", onMove);
             document.removeEventListener("touchend", onUp);
          }
-         document.addEventListener("touchmove", onMove);
-         document.addEventListener("touchend", onUp);
-      });
+         document.addEventListener("touchmove", onMove, { passive: true });
+         document.addEventListener("touchend", onUp, { passive: true });
+      }, { passive: true });
 
       track.addEventListener("click", e => {
          handleMove(e.clientX);
