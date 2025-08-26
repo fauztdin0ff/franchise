@@ -2373,14 +2373,18 @@ Popup
   overflow-y: auto;
   opacity: 0;
   pointer-events: none;
+  transition: all 0.3s ease 0.3s;
   scrollbar-gutter: stable;
 }
 .fv-popup.show {
   opacity: 1;
   pointer-events: all;
+  transition: all 0.3s ease 0s;
 }
 .fv-popup.show .fv-popup__body {
+  transition: all 0.3s ease 0.3s;
   transform: translateY(0);
+  opacity: 1;
 }
 .fv-popup__body {
   width: min(100% - 40px, 1112px);
@@ -2393,6 +2397,7 @@ Popup
   position: relative;
   overflow: hidden;
   gap: 112px;
+  opacity: 0;
   transform: translateY(30px);
   transition: all 0.3s ease 0s;
 }
