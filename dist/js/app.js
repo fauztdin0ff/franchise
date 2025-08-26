@@ -422,7 +422,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const popup = document.getElementById(popupId);
             if (popup) {
                popup.classList.add('show');
-               document.body.style.overflow = 'hidden';
+               document.body.classList.add('no-scroll');
             }
          });
       });
@@ -439,7 +439,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       if (isCloseBtn || (!isInsideBody && isPopupArea)) {
          openPopup.classList.remove('show');
-         document.body.style.overflow = '';
+         document.body.classList.remove('no-scroll');
       }
    });
 });

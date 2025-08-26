@@ -666,6 +666,7 @@ html {
 }
 
 body {
+  height: auto;
   min-height: 100%;
   background: #f4f4f4;
   color: #0b0b0b;
@@ -673,6 +674,21 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 125%;
+}
+body.no-scroll {
+  position: relative;
+  overflow: hidden;
+}
+body.no-scroll::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
 }
 
 .wrapper {
@@ -2363,26 +2379,22 @@ Popup
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 99;
+  z-index: 999;
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
   padding: 40px 0;
-  background: rgba(0, 0, 0, 0.36);
   max-height: 100vh;
   overflow-y: auto;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.3s ease 0.3s;
   scrollbar-gutter: stable;
 }
 .fv-popup.show {
   opacity: 1;
   pointer-events: all;
-  transition: opacity 0.3s ease 0s;
 }
 .fv-popup.show .fv-popup__body {
-  transition: all 0.3s ease 0.3s;
   transform: translateY(0);
   opacity: 1;
 }
