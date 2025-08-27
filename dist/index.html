@@ -10,6 +10,30 @@
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.css" />
    <link rel="stylesheet" href="css/style.min.css">
    <title>Франшиза</title>
+
+   <!-- Marquiz script start -->
+   <script>
+      (function (w, d, s, o) {
+         var j = d.createElement(s); j.async = true; j.src = '//script.marquiz.ru/v2.js'; j.onload = function () {
+            if (document.readyState !== 'loading') Marquiz.init(o);
+            else document.addEventListener("DOMContentLoaded", function () {
+               Marquiz.init(o);
+            });
+         };
+         d.head.insertBefore(j, d.head.firstElementChild);
+      })(window, document, 'script', {
+         host: '//quiz.marquiz.ru',
+         region: 'ru',
+         id: '68af08eabfcace0019b4f28f',
+         autoOpen: false,
+         autoOpenFreq: 'once',
+         openOnExit: false,
+         disableOnMobile: false
+      }
+      );
+   </script>
+   <!-- Marquiz script end -->
+
 </head>
 
 <body>
@@ -905,6 +929,7 @@
             </div>
          </div>
       </div>
+
    </div>
    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
    style="display: none;">
@@ -949,6 +974,9 @@
    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.umd.js"></script>
    <script src="js/app.js"></script>
+
+
+   <script>(function (t, p) { window.Marquiz ? Marquiz.add([t, p]) : document.addEventListener('marquizLoaded', function () { Marquiz.add([t, p]) }) })('Widget', { id: '68af08eabfcace0019b4f28f', position: 'left', delay: 10, autoOpen: 10, disableOnMobile: false, disableIfClosed: false, gradientEnabled: true, gradientColor: '#303537', gradientIntensity: 40, hiddenArrowOnMobile: false })</script>
 </body>
 
 </html>
