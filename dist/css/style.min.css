@@ -2550,3 +2550,23 @@ Popup
     width: 200%;
   }
 }
+
+/*---------------------------------------------------------------------------
+quiz
+---------------------------------------------------------------------------*/
+.quiz-navbar_has-progress {
+  background: #fff !important;
+}
+
+.progress-bar-linear__label {
+  color: #0b0b0b !important;
+}
+.progress-bar-linear__label span {
+  color: #0b0b0b !important;
+}
+
+@media (width < 818px) {
+  .quiz-navbar:not(.is-outline):not(.mobile-promotions-bar_on) {
+    background-color: #fff !important;
+  }
+}
