@@ -743,10 +743,32 @@ main {
     gap: 60px;
   }
 }
+@media (width < 1300px) {
+  .fv-franchise__menu {
+    display: none;
+  }
+}
+.fv-franchise__menu a {
+  font-weight: 600;
+  font-size: 20px;
+  color: #000;
+  text-transform: uppercase;
+  border-bottom: 1px solid #dcdcdc;
+  width: 100%;
+  display: block;
+  padding: 22px 0;
+  transition: color 0.3s ease 0s;
+}
+@media (hover: hover) {
+  .fv-franchise__menu a:hover {
+    color: #038e43;
+  }
+}
 .fv-franchise__info {
   flex: 0 1 50%;
   display: flex;
   flex-direction: column;
+  z-index: 2;
 }
 @media (width < 1024px) {
   .fv-franchise__info {
@@ -809,6 +831,9 @@ main {
     order: 1;
     grid-column: span 2;
   }
+}
+.fv-franchise__image {
+  pointer-events: none;
 }
 .fv-franchise__image img {
   width: auto;
