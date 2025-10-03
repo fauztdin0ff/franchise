@@ -2099,7 +2099,7 @@ Faq
 ---------------------------------------------------------------------------*/
 @media (width < 768px) {
   .faq {
-    padding: 40px 0 80px;
+    padding: 40px 0 40px;
   }
 }
 .faq__title {
@@ -2214,14 +2214,16 @@ Faq
 /*---------------------------------------------------------------------------
 About
 ---------------------------------------------------------------------------*/
+.fv-about {
+  padding: 0 0 100px;
+}
 @media (width < 768px) {
   .fv-about {
-    padding: 40px 0 80px;
+    padding: 0 0 80px;
   }
 }
 .fv-about__content {
   display: flex;
-  align-items: flex-start;
   justify-content: space-between;
   gap: 50px;
   max-width: 1114px;
@@ -2254,6 +2256,9 @@ About
     margin-bottom: 30px;
   }
 }
+.fv-about__text {
+  max-width: 461px;
+}
 .fv-about__text p:not(:last-child) {
   margin-bottom: 20px;
 }
@@ -2264,8 +2269,25 @@ About
 }
 .fv-about__image {
   flex-shrink: 0;
+  height: 280px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+}
+.fv-about__image img {
+  width: auto;
+  height: calc(100% - 50px);
+  object-fit: contain;
+}
+.fv-about__image p {
+  margin-top: 10px;
+  font-size: 16px;
+  text-align: center;
 }
 @media (width < 768px) {
+  .fv-about__image {
+    height: auto;
+  }
   .fv-about__image img {
     width: 100%;
     height: auto;
