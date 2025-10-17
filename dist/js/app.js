@@ -148,56 +148,31 @@ _modules_functions_js__WEBPACK_IMPORTED_MODULE_0__.isWebp();
 ---------------------------------------------------------------------------*/
 document.addEventListener("DOMContentLoaded", () => {
    // Swiper
-   const storiesSlider = new Swiper(".stories__slider", {
+   const clientsSlider = new Swiper(".fv-clients__cards", {
       loop: false,
-      slidesPerView: 4,
+      slidesPerView: 3,
+      watchOverflow: true,
       spaceBetween: 20,
-      navigation: {
-         nextEl: ".stories__slider-next",
-         prevEl: ".stories__slider-prev",
-      },
       pagination: {
-         el: '.stories__slider-pagination',
+         el: ".fv-clients__pagination",
          clickable: true,
       },
       breakpoints: {
          320: {
             slidesPerView: 1,
-            spaceBetween: 0,
-         },
-         600: {
-            slidesPerView: 2,
-            spaceBetween: 0,
+            spaceBetween: 10,
          },
          768: {
-            slidesPerView: 3,
-            spaceBetween: 0,
+            slidesPerView: 2,
+            spaceBetween: 20,
          },
          1024: {
-            slidesPerView: 4,
-            spaceBetween: 0,
+            slidesPerView: 3,
+            spaceBetween: 20,
          }
       }
    });
-
 });
-Fancybox.bind("[data-fancybox]", {
-   Slideshow: {
-      playOnStart: true,
-      timeout: 3000,
-   },
-   Toolbar: {
-      display: {
-         left: [],
-         middle: [],
-         right: ["slideshow", "close"],
-      },
-   },
-   Images: {
-      zoom: false,
-   },
-});
-
 
 /*---------------------------------------------------------------------------
 Tariffs slider
@@ -484,6 +459,53 @@ window.addEventListener("DOMContentLoaded", function () {
       input.addEventListener("focus", mask, false);
       input.addEventListener("blur", mask, false);
       input.addEventListener("keydown", mask, false);
+   });
+});
+
+
+/*---------------------------------------------------------------------------
+Fullcards
+---------------------------------------------------------------------------*/
+document.addEventListener("DOMContentLoaded", () => {
+   const cards = document.querySelectorAll(".minicard");
+   const popup = document.querySelector(".fv-fullcard");
+   const popupImage = popup.querySelector(".fv-fullcard__image");
+   const popupName = popup.querySelector(".fv-fullcard__name");
+   const popupRole = popup.querySelector(".fv-fullcard__role");
+   const popupText = popup.querySelector(".fv-fullcard__text");
+   const popupClose = popup.querySelector(".fv-fullcard__close");
+
+   if (!cards.length || !popup) return;
+
+   cards.forEach(card => {
+      const openBtn = card.querySelector(".opencard");
+      if (!openBtn) return;
+
+      openBtn.addEventListener("click", () => {
+         const img = card.querySelector(".fv-clients__photo img");
+         const name = card.querySelector(".fv-clients__name");
+         const role = card.querySelector(".fv-clients__role");
+         const text = card.querySelector(".fv-clients__text");
+
+         popupImage.innerHTML = `<img src="${img.src}" alt="${img.alt}" width="${img.width}" height="${img.height}">`;
+         popupName.textContent = name.textContent;
+         popupRole.textContent = role.textContent;
+         popupText.innerHTML = text.innerHTML;
+         popup.classList.add("show");
+         document.body.style.overflow = "hidden";
+      });
+   });
+
+   popupClose.addEventListener("click", () => {
+      popup.classList.remove("show");
+      document.body.style.overflow = "";
+   });
+
+   popup.addEventListener("click", e => {
+      if (e.target === popup) {
+         popup.classList.remove("show");
+         document.body.style.overflow = "";
+      }
    });
 });
 

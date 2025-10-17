@@ -6,9 +6,9 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
    <meta name="format-detection" content="telephone=no">
    <!-- Styles -->
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.css" />
-   <link rel="stylesheet" href="css/style.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20251016215412" />
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.css?_v=20251016215412" />
+   <link rel="stylesheet" href="css/style.min.css?_v=20251016215412">
    <title>Франшиза</title>
 
    <!-- Marquiz script start -->
@@ -59,13 +59,12 @@
                <div class="fv-franchise__content">
                   <div class="fv-franchise__menu">
                      <ul>
-                        <li><a href="">Наши клиенты</a></li>
-                        <li><a href="">Лица компании</a></li>
-                        <li><a href="">Оборудование</a></li>
-                        <li><a href="">Новости</a></li>
-                        <li><a href="">Вопрос-ответ</a></li>
-                        <li><a href="">Отзывы</a></li>
-                        <li><a href="">Контакты</a></li>
+                        <li><a href="#calculator">Калькулятор прибыли</a></li>
+                        <li><a href="#solutions">IT-РЕШЕНИЯ</a></li>
+                        <li><a href="#benefits">Что в Коробке?</a></li>
+                        <li><a href="#stages">Этапы запуска</a></li>
+                        <li><a href="#price">Цены</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
                      </ul>
                   </div>
                   <div class="fv-franchise__info">
@@ -74,168 +73,109 @@
                         Присоединяйся к сильному бренду и запусти бизнес, который уже за 6 месяцев приносит 300
                         000 ₽/мес.</div>
                      <div class="fv-franchise__buttons">
-                        <a href="#" class="button-green open-popup" data-popup="requestPopup">Узнать больше</a>
-                        <a href="#" class="button  open-popup" data-popup="requestPopup">Бесплатная консультация</a>
-                        <a href="" target="_blank" class="button-soc" aria-label="whatsapp">
+                        <a href="#" class="button-green  open-popup" data-popup="requestPopup">Бесплатная
+                           консультация</a>
+                        <a href="https://wa.me/79854103000" class="button-soc" aria-label="whatsapp">
                            <svg>
                               <use xlink:href="#icon-whatsapp"></use>
                            </svg>
                         </a>
+                        <a href="https://t.me/+79854103000" class="button-soc" aria-label="telegram">
+                           <svg>
+                              <use xlink:href="#icon-telegram"></use>
+                           </svg>
+                        </a>
                      </div>
                   </div>
-                  <div class="fv-franchise__image">
-                     <img src="img/hero.png" width="753" height="428" alt="Image">
-                  </div>
+               </div>
+               <div class="fv-franchise__image">
+                  <picture><source srcset="img/hero.webp" type="image/webp"><img src="img/hero.jpeg" width="753" height="428" alt="Image"></picture>
                </div>
             </div>
          </section>
 
-         <section class="stories">
-            <div class="stories__body container">
-               <h2 class="stories__title section-title">Реальные истории наших партнёров</h2>
-               <div class="stories__subtitle section-subtitle">От нуля до прибыли — за 3–5 месяцев. Без «вот если бы», а
-                  просто - «вот как есть»</div>
-               <div class="stories__content">
-                  <div class="stories__slider swiper">
-                     <div class="swiper-wrapper">
-                        <div class="stories__slide swiper-slide">
-                           <div class="stories__slide-media">
-                              <a href="https://icompany.ru/wp-content/uploads/2022/03/otzyvy-klientov-kliningovoj-kompanii-siti-klining-2.mp4"
-                                 data-fancybox="history-video">
-                                 <img src="img/posters/1.jpeg" width="269" height="151" alt="Постер">
-                                 <svg class="stories__slide-play">
-                                    <use xlink:href="#icon-play-circle"></use>
-                                 </svg>
-                              </a>
-                           </div>
-                           <div class="stories__slide-text">
-                              Сергей Юрьевич Дроздов, директор ГБОУ ЦО № 429 "Соколиная гора" (Москва)
-                           </div>
+         <section class="fv-clients" id="clients">
+            <div class="fv-clients__body container">
+               <h2 class="fv-clients__title section-title">Реальные истории наших партнёров</h2>
+               <div class="fv-clients__subtitle section-subtitle">От нуля до прибыли — за 3–5 месяцев. Без «вот если
+                  бы», а просто - «вот как есть»</div>
+               <div class="fv-clients__cards swiper">
+                  <div class="swiper-wrapper">
+                     <div class="fv-clients__card swiper-slide minicard">
+                        <div class="fv-clients__photo">
+                           <picture><source srcset="img/client-1.webp" type="image/webp"><img src="img/client-1.png" width="148" height="148" alt="Клиент"></picture>
                         </div>
-                        <div class="stories__slide swiper-slide">
-                           <div class="stories__slide-media">
-                              <a href="https://icompany.ru/wp-content/uploads/2022/03/otzyvy-klientov-kliningovoj-kompanii-siti-klining-1.mp4"
-                                 data-fancybox="history-video">
-                                 <img src="img/posters/2.jpeg" width="269" height="151" alt="Постер">
-                                 <svg class="stories__slide-play">
-                                    <use xlink:href="#icon-play-circle"></use>
-                                 </svg>
-                              </a>
+                        <div class="fv-clients__info">
+                           <div class="fv-clients__name">РУСТАМ, КАЗАНЬ</div>
+                           <div class="fv-clients__role">Франчайзи с ноября 2022 года</div>
+                           <div class="fv-clients__text">
+                              <p>
+                                 До iCleaning я два года занимался уборкой квартир — выручка доходила до 300 000 ₽, но
+                                 дальше роста не было: хлопот
+                                 много, отдачи мало. Хотел масштабироваться и перейти в B2B.
+                                 Изучал разные франшизы, но остановился на iCleaning — понравился подход и поддержка.
+                                 Взял
+                                 франшизу среднего формата,
+                                 строго следовал регламентам и советам кураторов. За год выручка и прибыль выросли в
+                                 пять
+                                 раз, а ошибок почти не было.
+                              </p>
+                              <p>Сейчас планирую переходить на следующий этап — доверяю опыту команды и хочу
+                                 использовать новые инструменты для роста.</p>
                            </div>
-                           <div class="stories__slide-text">
-                              Александр Стерликов, Руководители отдела закупок сети салонов красоты DESSANGE, CAMILLE
-                              ALBANE.
-                           </div>
+                           <button type="button" class="fv-clients__button opencard">Читать подробнее</button>
                         </div>
-                        <div class="stories__slide swiper-slide">
-                           <div class="stories__slide-media">
-                              <a href="https://icompany.ru/wp-content/uploads/2022/03/otzyvy-klientov-kliningovoj-kompanii-siti-klining.mp4"
-                                 data-fancybox="history-video">
-                                 <img src="img/posters/3.jpeg" width="242" height="151" alt="Постер">
-                                 <svg class="stories__slide-play">
-                                    <use xlink:href="#icon-play-circle"></use>
-                                 </svg>
-                              </a>
-                           </div>
-                           <div class="stories__slide-text">
-                              Ирина Базаненкова, помошник генерального директора компании "Евро Траст"
-                           </div>
+                        <div class="fv-clients__quotes">
+                           <img src="img/quotes.svg" width="200" height="618" alt="quotes">
                         </div>
-                        <div class="stories__slide swiper-slide">
-                           <div class="stories__slide-media">
-                              <a href="https://icompany.ru/wp-content/uploads/2022/03/otzyvy-klientov-kliningovoj-kompanii-siti-klining.mp4"
-                                 data-fancybox="history-video">
-                                 <img src="img/posters/4.webp" width="269" height="151" alt="Постер">
-                                 <svg class="stories__slide-play">
-                                    <use xlink:href="#icon-play-circle"></use>
-                                 </svg>
-                              </a>
-                           </div>
-                           <div class="stories__slide-text">
-                              Кафе НАРВА,
-                           </div>
+                     </div>
+                     <div class="fv-clients__card swiper-slide minicard">
+                        <div class="fv-clients__photo">
+                           <picture><source srcset="img/client-2.webp" type="image/webp"><img src="img/client-2.png" width="148" height="148" alt="Клиент"></picture>
                         </div>
-                        <div class="stories__slide swiper-slide">
-                           <div class="stories__slide-media">
-                              <a href="https://icompany.ru/wp-content/uploads/2022/03/otzyvy-klientov-kliningovoj-kompanii-siti-klining-2.mp4"
-                                 data-fancybox="history-video">
-                                 <img src="img/posters/1.jpeg" width="269" height="151" alt="Постер">
-                                 <svg class="stories__slide-play">
-                                    <use xlink:href="#icon-play-circle"></use>
-                                 </svg>
-                              </a>
+                        <div class="fv-clients__info">
+                           <div class="fv-clients__name">ЕКАТЕРИНА, САНКТ-ПЕТЕРБУРГ</div>
+                           <div class="fv-clients__role">Франчайзи с января 2024 года</div>
+                           <div class="fv-clients__text">
+                              <p>До iCleaning я руководила небольшим кафе, но после пандемии
+                                 бизнес закрылся. Взяла кредит и решила начать с нуля —
+                                 выбрала клининг.
+                                 Сразу приобрела максимальный пакет франшизы — всё продумано, особенно электронная
+                                 система
+                                 заказов и контроля за
+                                 персоналом. Видно, что её создали люди с большим опытом.
+                              </p>
+                              <p>
+                                 Да, сложно, особенно с персоналом, но команда iCleaning умеет решать любые задачи. Я
+                                 вижу
+                                 это партнёрство долгосрочным и
+                                 хочу вырасти до полноценного партнёра iCompany, чтобы запустить ещё один регион.
+                              </p>
                            </div>
-                           <div class="stories__slide-text">
-                              Сергей Юрьевич Дроздов, директор ГБОУ ЦО № 429 "Соколиная гора" (Москва)
-                           </div>
+                           <button type="button" class="fv-clients__button opencard">Читать подробнее</button>
                         </div>
-                        <div class="stories__slide swiper-slide">
-                           <div class="stories__slide-media">
-                              <a href="https://icompany.ru/wp-content/uploads/2022/03/otzyvy-klientov-kliningovoj-kompanii-siti-klining-1.mp4"
-                                 data-fancybox="history-video">
-                                 <img src="img/posters/2.jpeg" width="269" height="151" alt="Постер">
-                                 <svg class="stories__slide-play">
-                                    <use xlink:href="#icon-play-circle"></use>
-                                 </svg>
-                              </a>
-                           </div>
-                           <div class="stories__slide-text">
-                              Александр Стерликов, Руководители отдела закупок сети салонов красоты DESSANGE, CAMILLE
-                              ALBANE.
-                           </div>
+                        <div class="fv-clients__quotes">
+                           <img src="img/quotes.svg" width="200" height="618" alt="quotes">
                         </div>
-                        <div class="stories__slide swiper-slide">
-                           <div class="stories__slide-media">
-                              <a href="https://icompany.ru/wp-content/uploads/2022/03/otzyvy-klientov-kliningovoj-kompanii-siti-klining.mp4"
-                                 data-fancybox="history-video">
-                                 <img src="img/posters/3.jpeg" width="242" height="151" alt="Постер">
-                                 <svg class="stories__slide-play">
-                                    <use xlink:href="#icon-play-circle"></use>
-                                 </svg>
-                              </a>
-                           </div>
-                           <div class="stories__slide-text">
-                              Ирина Базаненкова, помошник генерального директора компании "Евро Траст"
-                           </div>
+                     </div>
+                     <div class="fv-clients__soon swiper-slide">
+                        <div class="fv-clients__soon-icon">
+                           <img src="img/theme-icons/message.svg" width="55" height="55" alt="message">
                         </div>
-                        <div class="stories__slide swiper-slide">
-                           <div class="stories__slide-media">
-                              <a href="https://icompany.ru/wp-content/uploads/2022/03/otzyvy-klientov-kliningovoj-kompanii-siti-klining.mp4"
-                                 data-fancybox="history-video">
-                                 <img src="img/posters/4.webp" width="269" height="151" alt="Постер">
-                                 <svg class="stories__slide-play">
-                                    <use xlink:href="#icon-play-circle"></use>
-                                 </svg>
-                              </a>
-                           </div>
-                           <div class="stories__slide-text">
-                              Кафе НАРВА,
+                        <div class="fv-clients__soon-text">
+                           <div class="fv-clients__soon-title">Скоро здесь появится ваша история успеха</div>
+                           <div class="fv-clients__soon-subtitle">
+                              Мы ценим вклад каждого франчайзи
                            </div>
                         </div>
                      </div>
-                     <div class="stories__slider-pagination slider-pagination"></div>
                   </div>
-                  <div class="stories__slider-buttons">
-                     <button type="button" class="stories__slider-prev slider-prev" aria-label="предыдущий слайд">
-                        <svg>
-                           <use xlink:href="#icon-arrow-left"></use>
-                        </svg>
-                     </button>
-                     <button type="button" class="stories__slider-next slider-next" aria-label="следующий слайд">
-                        <svg>
-                           <use xlink:href="#icon-arrow-right"></use>
-                        </svg>
-                     </button>
-                  </div>
-               </div>
-               <div class="stories__buttons">
-                  <a href="" class="button-green">Посмотреть кейсы</a>
-                  <a href="" class="button open-popup" data-popup="requestPopup">Бесплатная консультация</a>
+                  <div class="fv-clients__pagination"></div>
                </div>
             </div>
          </section>
 
-         <section class="tariffs">
+         <section class="tariffs" id="price">
             <div class="tariffs__body container">
                <h2 class="tariffs__title section-title">Выберите подходящий формат старта</h2>
                <div class="tariffs__items swiper">
@@ -330,7 +270,7 @@
             </div>
          </section>
 
-         <section class="calculator">
+         <section class="calculator" id="calculator">
             <div class="calculator__body container">
                <h2 class="calculator__title section-title">Калькулятор прибыли</h2>
                <div class="calculator__subtitle section-subtitle">Узнай свою будущую прибыль за 1 минуту</div>
@@ -405,7 +345,7 @@
             </div>
          </section>
 
-         <section class="guidance">
+         <section class="guidance" id="benefits">
             <div class="guidance__body container">
                <div class="guidance__titles">
                   <h3 class="guidance__title ">
@@ -598,7 +538,7 @@
             </div>
          </section>
 
-         <section class="solutions">
+         <section class="solutions" id="solutions">
             <div class="solutions__body container">
                <h2 class="solutions__title section-title">IT-решения, которые экономят вам 100 000 ₽ в месяц</h2>
                <div class="solutions__cards">
@@ -616,13 +556,13 @@
                      <div class="solutions__card-descr">Одним касанием связаться с ключевыми сотрудниками клининговой
                         компании, которые обслуживают объект.</div>
                      <div class="solutions__card-image">
-                        <img src="img/app-screen.png" width="409" height="464" alt="Приложение">
+                        <picture><source srcset="img/app-screen.webp" type="image/webp"><img src="img/app-screen.png" width="409" height="464" alt="Приложение"></picture>
                      </div>
                   </div>
                   <div class="solutions__card solutions__card-team">
                      <div class="solutions__card-worker">
                         <div class="solutions__card-worker-photo">
-                           <img src="img/teammate.png" width="139" height="166" alt="Сотрудник">
+                           <picture><source srcset="img/teammate.webp" type="image/webp"><img src="img/teammate.png" width="139" height="166" alt="Сотрудник"></picture>
                         </div>
                         <p class="solutions__card-worker-name"><b>Иван Громов</b></p>
                         <p class="solutions__card-worker-role">Старший клинер</p>
@@ -637,7 +577,7 @@
                      <div class="solutions__card-descr">Вы сможете составить собственный список телефонов и установить
                         их на любую КНОПКУ в приложении.</div>
                      <div class="solutions__card-image">
-                        <img src="img/app-screen-sm.png" width="400" height="232" alt="Приложение">
+                        <picture><source srcset="img/app-screen-sm.webp" type="image/webp"><img src="img/app-screen-sm.png" width="400" height="232" alt="Приложение"></picture>
                      </div>
                   </div>
                   <div class="solutions__card">
@@ -652,9 +592,9 @@
             </div>
          </section>
 
-         <section class="launch">
+         <section class="launch" id="stages">
             <div class="launch__body container">
-               <h2 class="launch__title section-title">4 этапа запуска — и ты уже получаешь заказы</h2>
+               <h2 class="launch__title section-title">4 этапа запуска — <br> и ты уже получаешь заказы</h2>
                <div class="launch__cards">
                   <div class="launch__cards-row">
                      <div class="launch__card">
@@ -695,39 +635,14 @@
                         </div>
                      </div>
                   </div>
-                  <div class="launch__cards-bg">
-                     <svg width="534" height="1384" viewBox="0 0 534 1384" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                           d="M214.5 1.98996C214.5 1.98996 357.196 -10.737 405.5 48.99C460.432 116.912 419.879 190.66 388 271.99C327.252 426.969 85.7537 356.378 38.5 515.99C16.9932 588.635 12.1831 638.946 38.5 709.99C75.2476 809.192 244 886.49 244 886.49C244 886.49 445.875 955.45 488 1065.99C525.113 1163.38 528.986 1259.7 452.5 1330.49C399.037 1379.97 273.5 1382.99 273.5 1382.99"
-                           stroke="#038E43" stroke-width="1" fill="none" stroke-dasharray="3000"
-                           stroke-dashoffset="3000">
-                           <animate attributeName="stroke-dashoffset" values="3000;0;3000" keyTimes="0;0.99;1" dur="8s"
-                              repeatCount="indefinite" begin="0s" />
-                        </path>
-
-                        <path
-                           d="M233.979 2.12668C233.979 2.12668 376.675 -10.6003 424.979 49.1267C479.911 117.048 439.358 190.797 407.479 272.127C346.731 427.106 105.233 356.515 57.979 516.127C36.4722 588.772 31.6622 639.083 57.979 710.127C94.7266 809.329 263.479 886.627 263.479 886.627C263.479 886.627 465.354 955.586 507.479 1066.13C544.592 1163.51 548.465 1259.83 471.979 1330.63C418.516 1380.11 292.979 1383.13 292.979 1383.13"
-                           stroke="#038E43" stroke-width="1" fill="none" stroke-dasharray="3000"
-                           stroke-dashoffset="3000">
-                           <animate attributeName="stroke-dashoffset" values="3000;0;3000" keyTimes="0;0.99;1" dur="8s"
-                              repeatCount="indefinite" begin="3s" />
-                        </path>
-
-                        <path
-                           d="M194.979 2.12668C194.979 2.12668 337.675 -10.6003 385.979 49.1267C440.911 117.048 400.358 190.797 368.479 272.127C307.731 427.106 66.2328 356.515 18.979 516.127C-2.52783 588.772 -7.33785 639.083 18.979 710.127C55.7266 809.329 224.479 886.627 224.479 886.627C224.479 886.627 426.354 955.586 468.479 1066.13C505.592 1163.51 509.465 1259.83 432.979 1330.63C379.516 1380.11 253.979 1383.13 253.979 1383.13"
-                           stroke="#038E43" stroke-width="1" fill="none" stroke-dasharray="3000"
-                           stroke-dashoffset="3000">
-                           <animate attributeName="stroke-dashoffset" values="3000;0;3000" keyTimes="0;0.99;1" dur="8s"
-                              repeatCount="indefinite" begin="6s" />
-                        </path>
-                     </svg>
+                  <div class="launch__cards-row">
+                     <div class="launch__card"></div>
                   </div>
                </div>
             </div>
          </section>
 
-         <section class="faq">
+         <section class="faq" id="faq">
             <div class="faq__body container">
                <h2 class="faq__title section-title">Ответы на вопросы</h2>
                <div class="faq__items">
@@ -828,67 +743,253 @@
 
          <section class="fv-about">
             <div class="fv-about__body container">
-               <div class="fv-about__content">
-                  <div class="fv-about__info">
-                     <h3 class="fv-about__subtitle">Мы не просто франшиза. Мы — система, которая работает</h3>
-                     <div class="fv-about__text">
-                        <p>
-                           iCompany — это не просто название. <br>
-                           Это команда, которая прошла путь от нуля до масштаба. <br>
-                           Мы ошибались. Падали. Вставали. Учились. И теперь делимся всем, что приносит пользу.
-                        </p>
-                        <p>
-                           Если вы здесь — значит, вы готовы к переменам. <br>
-                           А мы готовы дать вам всё, что нужно для старта и роста.
-                        </p>
+               <h2 class="fv-about__title section-title">О нас</h2>
+               <div class="fv-clients__cards swiper">
+                  <div class="swiper-wrapper">
+                     <div class="fv-clients__card swiper-slide minicard">
+                        <div class="fv-clients__photo">
+                           <picture><source srcset="img/ceo.webp" type="image/webp"><img src="img/ceo.png" width="148" height="148" alt="Клиент"></picture>
+                        </div>
+                        <div class="fv-clients__info">
+                           <div class="fv-clients__name">Константин Гурков</div>
+                           <div class="fv-clients__role">Генеральный директор iCompany</div>
+                           <div class="fv-clients__text">
+                              <p>
+                                 В 2011 году я арендовал 18 метровый офис в в бизнес-центре класса В, расставил 5 столов
+                                 и
+                                 начал размещать бъявления о
+                                 наборе менеджеров по продажам и по производству. Моя задача была взять двух-четырех
+                                 специалистов, которые научат меня:
+                                 как продавать клининговые услуги и как их оказывать. Начались собеседования, все
+                                 неудачные, я не понимал, какой персонал
+                                 подходит, какой нет…
+                              </p>
+                              <p>
+                                 Одновременно я принялся за изготовление сайта, нашел подрядчика, но потратил немало
+                                 времени, что бы понять, что нужно
+                                 для получения звонков, а что просто занимает место для SEO. Забегая вперед скажу, что
+                                 первый сайт был совершенно
+                                 проваленным и, скорее, работал против моего бизнеса… Только через год у меня появилось
+                                 что
+                                 то похожее на маленький
+                                 коллектив, появились несколько контрактов и небольшая группа уборщиц. За этот год я
+                                 научился делать расчеты уборки,
+                                 оформлять коммерческие предложения, трудовые договоры, придумал ведомости по зарплатам,
+                                 журналы всяческих учетов, методы
+                                 контроля уборщиков, рекламные инструменты и многое-многое-многое (специально пишу три
+                                 раза) другое. Через 3 года это все
+                                 пришлось еще много раз менять и переделывать! Появлялись новые объекты, мелкие, крупные
+                                 и
+                                 очень крупные, каждый из них
+                                 приносил вопросы и ответы, вызовы и сложные решения… Каждый год я «изобретал
+                                 велосипед»,
+                                 потому что на рынке не было ни
+                                 одной франшизы, где за деньги давали бы все ответы на простые и сложные вопросы. Тогда
+                                 я
+                                 пообещал себе, что настанет тот
+                                 день, когда я сделаю то самое - это будет идеальный продукт, куда я вложу все наши
+                                 знания
+                                 и опыт, все наши связи и
+                                 умения! Сегодня я могу сказать - мы приготовили для вас нечто, что изменит вашу жизнь!
+                                 Это
+                                 - iFranchise
+                              </p>
+                           </div>
+                           <button type="button" class="fv-clients__button opencard">Читать подробнее</button>
+                        </div>
+                        <div class="fv-clients__quotes">
+                           <img src="img/quotes.svg" width="200" height="618" alt="quotes">
+                        </div>
+                     </div>
+
+                     <div class="fv-clients__card swiper-slide minicard">
+                        <div class="fv-clients__photo">
+                           <picture><source srcset="img/team-1.webp" type="image/webp"><img src="img/team-1.png" width="148" height="148" alt="Клиент"></picture>
+                        </div>
+                        <div class="fv-clients__info">
+                           <div class="fv-clients__name">Артем Басамыкин</div>
+                           <div class="fv-clients__role">Руководитель команды разработчиков IT продуктов для iCompany
+                           </div>
+                           <div class="fv-clients__text">
+                              <p>Сотрудничество с iCompany для начиналось с простого внедрения
+                                 CRM для службы продаж клининговой компании. Есть такая
+                                 шутка, что количество программ, которые созданы для управления процессами равно
+                                 количеству
+                                 программистов, потому что
+                                 первая практическая работа программиста - разработка простейшей CRM. Поэтому задача для
+                                 нас была вполне тривиальная:
+                                 создание воронки продаж, интеграция с Telegram или WhatsApp, настройка и обучение. Во
+                                 что
+                                 все это вырастет тогда не
+                                 представлял никто. Каждый день у ребят возникали новые задачи, идеи, пожелания и
+                                 доработки, мы - терпеливо и методично
+                                 воплощали их… Этот процесс не заканчивается и сейчас! Второй год еженедельно у нас
+                                 совместные ZOOM совещания, мозговые
+                                 штурмы, обучение…</p>
+
+                              <p>
+                                 На сегодня мы имеем уникальный продукт, который позволяет менеджерам по продажам вести
+                                 одновременно вдвое-втрое больше
+                                 сделок, чем раньше. Менеджерам по производству CRM позволяет контролировать и
+                                 табелировать объекты, сведя ошибки до
+                                 минимума, а их руководителям - видеть всю картину дистанционно, сократив разъезды до
+                                 минимума! Служба закупок больше не
+                                 пользуется чатами, для согласований счетов и сверкой расходов с бюджетами, все
+                                 происходит в автоматическом режиме. Отдел
+                                 кадров теперь моментально согласовывает и утверждает персонал, автоматически закрывает
+                                 и открывает вакансии по каждому
+                                 объекту. Руководство в режиме онлайн наблюдает за процессами: от телефонных звонков до
+                                 финансовых результатов. Причем,
+                                 может молниеносно регулировать работу персонала!
+                              </p>
+
+                              <p>
+                                 Конечно, сама система не является ноу-хау, но система управления клининговой компанией,
+                                 которую мы разработали -
+                                 потрясающий по важности и нужности инструмент, это локомотив, на котором бизнес будет
+                                 развивать максимальную скорость на
+                                 пути к успеху! В состав франшизы клининговой компании iFranchise входит пакет
+                                 доработок, которые будет осуществлять наша
+                                 компания. Мы будем рады катализировать ваш продукт, сдлеть его максимально удобным и
+                                 эффективным для вашей компании!
+                              </p>
+                           </div>
+                           <button type="button" class="fv-clients__button opencard">Читать подробнее</button>
+                        </div>
+                        <div class="fv-clients__quotes">
+                           <img src="img/quotes.svg" width="200" height="618" alt="quotes">
+                        </div>
+                     </div>
+
+                     <div class="fv-clients__card swiper-slide minicard">
+                        <div class="fv-clients__photo">
+                           <picture><source srcset="img/team-2.webp" type="image/webp"><img src="img/team-2.png" width="148" height="148" alt="Клиент"></picture>
+                        </div>
+                        <div class="fv-clients__info">
+                           <div class="fv-clients__name">Максим Рогожко</div>
+                           <div class="fv-clients__role">Директор АО ОПТИКОМ комплексного поставщика товаров для
+                              iCompany</div>
+                           <div class="fv-clients__text">
+                              <p>Наша компания одна из самых крупных, самых известных на рынке
+                                 России. ОПТИКОМ - это производитель, поставщик комплексных
+                                 решений, а так же эксперт на рынке профессиональной химии, уборочного инвентаря,
+                                 бумажно-гигиенической продукции и
+                                 других товаров для клинингового бизнеса. В ассортименте компании свыше 30 000
+                                 наименований
+                                 в 22 товарных категориях,
+                                 произведенных на собственных и партнерских производствах. Благодаря экспертизе в
+                                 профильных сферах и доскональному
+                                 знанию продукции, мы подбираем лучшие решения, основанные на опыте более чем 20-летней
+                                 практики.
+                              </p>
+
+                              <p>
+                                 Вместе с рядом продуктовых категорий наши клиенты получают сопровождение инженеров и
+                                 технологов «ОПТИКОМ», включающее
+                                 подбор оптимальных моющих и дезинфицирующих средств, установку дозирующего и
+                                 пенно-моечного оборудования, сервисные
+                                 визиты, обучение персонала, контроль соблюдения технологий уборки. В штате компании
+                                 работает свыше 200 технологов,
+                                 обеспечивающих поддержку по всей России. Дистрибьюторская сеть в 85 регионах РФ.
+                                 Филиалы
+                                 компании: в Санкт-Петербурге,
+                                 Нижнем Новгороде, Самаре и Сочи. Нам доверяют более 10 000 постоянных клиентов, 1000 из
+                                 которых — это ведущие
+                                 клининговые компании.
+                                 Мы обладаем широким опытом работы со всеми федеральными и
+                                 локальными
+                                 компаниями страны, и решаем
+                                 задачи наших клиентов, сохраняя для них возможность фокусироваться на развитии бизнеса.
+                                 Мы надежны и удобны для
+                                 клинингового бизнеса, наши цены позволяют таким компаниям, как iCompany достойно
+                                 конкурировать и расти. Мы очень ценим
+                                 это доверие, заинтересованы в долгом сотрудничестве, поэтому предоставляем iCompany
+                                 особые условия на поставки, а они, в
+                                 свою очередь могут обеспечить хорошие цены для своих партнеров. Уверен, этот тандем
+                                 принесет всем участникам максимум
+                                 позитива и прибыли!
+                              </p>
+
+                              <p>
+                                 ОПТИКОМ — компания-эксперт на рынке профессиональной химии, уборочного
+                                 инвентаря,
+                                 бумажно-гигиенической продукции и
+                                 других товаров для клинингового бизнеса. В нашей ассортиментной матрице более 30 000
+                                 наименований в 22 товарных
+                                 категориях, произведенных на собственных и партнерских производствах и импортируемых
+                                 нами
+                                 в страну. Благодаря экспертизе
+                                 в профильных сферах и доскональному знанию продукции, мы подбираем лучшие решения,
+                                 основанные на опыте более чем
+                                 20-летней практики.
+                              </p>
+
+                              <p>
+                                 Мы обладаем лучшей в стране командой химиков-технологов, которые 24/7 подберут для вас
+                                 оптимальные моющие и
+                                 дезинфицирующие средства, установят дозирующее и пенно-моечное оборудование, обеспечат
+                                 вас
+                                 оптимальным количеством
+                                 сервисных визитов, обучением персонала, проконтролируют соблюдение технологий уборки. В
+                                 штате компании работает свыше 40
+                                 технологов, обеспечивающих поддержку по всей России. Дистрибьюторская сеть в 85
+                                 регионах
+                                 РФ. Филиалы компании: в
+                                 Санкт-Петербурге, Нижнем Новгороде, Самаре, Сочи и совсем скоро в Краснодаре.
+                              </p>
+
+                              <p>
+                                 Нам доверяют десятки тысяч постоянных клиентов, тысячи из которых — это ведущие
+                                 клининговые компании России и
+                                 близлежащих стран, ведь мы, решая задачи поставленные перед нами, даем возможность
+                                 нашим
+                                 партнерам фокусироваться на
+                                 развитии своего бизнеса!
+                              </p>
+
+                              <p></p>Надежность «ОПТИКОМ» позволяет, в т.ч., нашему партнеру, компании iCompany,
+                              достойно
+                              конкурировать и развиваться. Мы
+                              очень ценим доверие, сложившееся между нашими компаниями, и заинтересованы в долгосрочном
+                              и взаимовыгодном
+                              сотрудничестве. Особые условия сотрудничества «ОПТИКОМ» и iCompany позволяют и самим
+                              компаниям, и их партнерам уверенно
+                              смотреть в будущее, несмотря ни на что!
+                              Одновременно я принялся за изготовление сайта, нашел подрядчика, но потратил немало
+                              времени, что бы понять, что нужно
+                              для получения звонков, а что просто занимает место для SEO. Забегая вперед скажу, что
+                              первый сайт был совершенно
+                              проваленным и, скорее, работал против моего бизнеса… Только через год у меня появилось что
+                              то похожее на маленький
+                              коллектив, появились несколько контрактов и небольшая группа уборщиц. За этот год я
+                              научился делать расчеты уборки,
+                              оформлять коммерческие предложения, трудовые договоры, придумал ведомости по зарплатам,
+                              журналы всяческих учетов, методы
+                              контроля уборщиков, рекламные инструменты и многое-многое-многое (специально пишу три
+                              раза) другое. Через 3 года это все
+                              пришлось еще много раз менять и переделывать! Появлялись новые объекты, мелкие, крупные и
+                              очень крупные, каждый из них
+                              приносил вопросы и ответы, вызовы и сложные решения… Каждый год я «изобретал велосипед»,
+                              потому что на рынке не было ни
+                              одной франшизы, где за деньги давали бы все ответы на простые и сложные вопросы. Тогда я
+                              пообещал себе, что настанет тот
+                              день, когда я сделаю то самое - это будет идеальный продукт, куда я вложу все наши знания
+                              и опыт, все наши связи и
+                              умения! Сегодня я могу сказать - мы приготовили для вас нечто, что изменит вашу жизнь! Это
+                              - iFranchise</p>
+                           </div>
+                           <button type="button" class="fv-clients__button opencard">Читать подробнее</button>
+                        </div>
+                        <div class="fv-clients__quotes">
+                           <img src="img/quotes.svg" width="200" height="618" alt="quotes">
+                        </div>
                      </div>
                   </div>
-                  <div class="fv-about__image">
-                     <img src="img/ceo.png" width="393" height="365" alt="CEO">
-                     <p>Основатель компании <br> <b>Константин Вадимович Гурков</b></p>
-                  </div>
+                  <div class="fv-clients__pagination"></div>
                </div>
             </div>
          </section>
 
-         <section class="fv-request">
-            <div class="fv-request__body container">
-               <div class="fv-request__card">
-                  <h4 class="fv-request__card-name">Ответим на все ваши вопросы</h4>
-                  <div class="fv-request__links">
-                     <div class="fv-request__contacts">
-                        <a href="tel:+74954103000">+7 (495) 410-3000</a>
-                        <a href="tel:+78003332273">+7 (800) 333-22-73</a>
-                        <a href="mailto:info@icompany.ru">info@icompany.ru</a>
-                     </div>
-                     <div class="fv-request__socials">
-                        <a href="" target="_blank" aria-label="telegram" class="button-soc">
-                           <svg>
-                              <use xlink:href="#icon-telegram"></use>
-                           </svg>
-                        </a>
-                        <a href="" target="_blank" aria-label="whatsapp" class="button-soc">
-                           <svg>
-                              <use xlink:href="#icon-whatsapp"></use>
-                           </svg>
-                        </a>
-                     </div>
-                  </div>
-               </div>
-               <div class="fv-request__card">
-                  <h4 class="fv-request__card-name">Оставить заявку на открытие предприятия icleaning</h4>
-                  <div class="fv-request__card-buttons">
-                     <button type="button" class="fv-request__card-button button open-popup"
-                        data-popup="requestPopup">Хочу открыть в России</button>
-                     <button type="button" class="fv-request__card-button button open-popup"
-                        data-popup="requestPopup">Хочу открыть в другой стране</button>
-                     <button type="button" class="fv-request__card-button button open-popup" data-popup="requestPopup">У
-                        меня уже есть спот, хочу
-                        ещё</button>
-                  </div>
-               </div>
-            </div>
-         </section>
       </main>
       <footer></footer>
 
@@ -901,10 +1002,10 @@
                   <input type="text" class="theme-input tel-mask" placeholder="+7 (999)  111-22-33" autocomplete="tel">
                   <div class="fv-popup__form-error"></div>
                </div>
-               <div class="fv-popup__form-area no-valid">
+               <div class="fv-popup__form-area">
                   <div class="fv-popup__form-label">Почта</div>
                   <input type="email" class="theme-input" placeholder="info@icompany.ru" autocomplete="email">
-                  <div class="fv-popup__form-error">Некорректная почта</div>
+                  <div class="fv-popup__form-error"></div>
                </div>
                <div class="fv-popup__form-area">
                   <div class="fv-popup__form-label">Имя</div>
@@ -937,6 +1038,22 @@
             </div>
             <div class="fv-popup__bg">
                <img src="img/theme-icons/circle-lines.svg" width="955" height="294" alt="lines">
+            </div>
+         </div>
+      </div>
+
+      <div class="fv-fullcard ">
+         <div class="fv-fullcard__body">
+            <div class="fv-fullcard__image"></div>
+            <div class="fv-fullcard__info">
+               <div class="fv-fullcard__name"></div>
+               <div class="fv-fullcard__role"></div>
+               <div class="fv-fullcard__text"></div>
+            </div>
+            <div class="fv-fullcard__close">
+               <svg>
+                  <use xlink:href="#icon-close"></use>
+               </svg>
             </div>
          </div>
       </div>
@@ -982,9 +1099,9 @@
          fill="currentColor" />
    </svg>
 </svg>
-   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.umd.js"></script>
-   <script src="js/app.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js?_v=20251016215412"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.0/dist/fancybox/fancybox.umd.js?_v=20251016215412"></script>
+   <script src="js/app.js?_v=20251016215412"></script>
 
    <script>(function (t, p) { window.Marquiz ? Marquiz.add([t, p]) : document.addEventListener('marquizLoaded', function () { Marquiz.add([t, p]) }) })('Widget', { id: '68af08eabfcace0019b4f28f', position: 'left', delay: 10, autoOpen: 10, disableOnMobile: false, disableIfClosed: true, gradientEnabled: true, gradientColor: '#303537', gradientIntensity: 40, hiddenArrowOnMobile: false })</script>
 </body>
